@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestRandom {
 
-    String hand = GetHand.giveHand();
+    String hand = GetHand.giveRandom();
 
     @Test
     public void testRandomReturn() {

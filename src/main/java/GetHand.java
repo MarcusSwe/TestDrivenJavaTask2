@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class GetHand {
 
-    static String giveHand(){
+    static String giveRandom(){
 
         Random rand = new Random();
 
