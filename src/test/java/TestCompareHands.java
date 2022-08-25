@@ -49,5 +49,9 @@ public class TestCompareHands {
         assertEquals("LOSE", GetWinner.playerOneResults("PAPER", "SCISSORS"));
     }
 
+    @Test
+    public void testWrongInput(){
+        assertEquals("DRAW", GetWinner.playerOneResults("PAPsdfER", "SCISdSORS"));
+    }
 
 }
