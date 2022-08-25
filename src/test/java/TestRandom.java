@@ -1,15 +1,26 @@
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class TestRandom {
 
+    String hand = GetHand.giveHand();
+
+
+    @Test
     public void testRandomReturn() {
 
+        assertTrue(hand.equals("SCISSORS") || hand.equals("ROCK")
+                ||hand.equals("PAPER"));
+    }
 
 
-        assertTrue(GetHand.givehand() = "SCISSORS" || GetHand.givehand() = "ROCK"
-                ||GetHand.givehand() = "PAPER");
-
+    @Test
+    public void testRandomReturnTestofTest() {
+        assertTrue(hand.equals("SCIiSSORS") || hand.equals("RoOCK")
+                || hand.equals("PaAPER"));
     }
 
 }
