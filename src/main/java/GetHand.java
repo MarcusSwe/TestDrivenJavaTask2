@@ -1,8 +1,7 @@
 import java.util.Random;
 
 public class GetHand {
-
-    static String giveRandom(){
+    public String giveRandom(){
 
         Random rand = new Random();
 

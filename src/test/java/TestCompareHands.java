@@ -4,54 +4,56 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestCompareHands {
 
+    GetWinner winner = new GetWinner();
+
     @Test
     public void testScissorsVSScissors(){
-        assertEquals("DRAW", GetWinner.playerOneResults("SCISSORS", "SCISSORS"));
+        assertEquals("DRAW", winner.playerOneResults("SCISSORS", "SCISSORS"));
     }
 
     @Test
     public void testScissorsVSRock(){
-        assertEquals("LOSE", GetWinner.playerOneResults("SCISSORS", "ROCK"));
+        assertEquals("LOSE", winner.playerOneResults("SCISSORS", "ROCK"));
     }
 
     @Test
     public void testScissorsVSPaper(){
-        assertEquals("WIN", GetWinner.playerOneResults("SCISSORS", "PAPER"));
+        assertEquals("WIN", winner.playerOneResults("SCISSORS", "PAPER"));
     }
 
     @Test
     public void testRockVSRock(){
-        assertEquals("DRAW", GetWinner.playerOneResults("ROCK", "ROCK"));
+        assertEquals("DRAW", winner.playerOneResults("ROCK", "ROCK"));
     }
 
     @Test
     public void testRockVSPaper(){
-        assertEquals("LOSE", GetWinner.playerOneResults("ROCK", "PAPER"));
+        assertEquals("LOSE", winner.playerOneResults("ROCK", "PAPER"));
     }
 
     @Test
     public void testRockVSScissors(){
-        assertEquals("WIN", GetWinner.playerOneResults("ROCK", "SCISSORS"));
+        assertEquals("WIN", winner.playerOneResults("ROCK", "SCISSORS"));
     }
 
     @Test
     public void testPaperVSPaper(){
-        assertEquals("DRAW", GetWinner.playerOneResults("PAPER", "PAPER"));
+        assertEquals("DRAW", winner.playerOneResults("PAPER", "PAPER"));
     }
 
     @Test
     public void testPaperVSRock(){
-        assertEquals("WIN", GetWinner.playerOneResults("PAPER", "ROCK"));
+        assertEquals("WIN", winner.playerOneResults("PAPER", "ROCK"));
     }
 
     @Test
     public void testPaperVSScissors(){
-        assertEquals("LOSE", GetWinner.playerOneResults("PAPER", "SCISSORS"));
+        assertEquals("LOSE", winner.playerOneResults("PAPER", "SCISSORS"));
     }
 
     @Test
     public void testWrongInput(){
-        assertEquals("DRAW", GetWinner.playerOneResults("PAPsdfER", "SCISdSORS"));
+        assertEquals("DRAW", winner.playerOneResults("PAPsdfER", "SCISdSORS"));
     }
 
 }

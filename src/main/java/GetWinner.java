@@ -1,6 +1,6 @@
 public class GetWinner {
 
-    static String playerOneResults(String playerOne, String playerTwo){
+    public String playerOneResults(String playerOne, String playerTwo){
 
         switch(playerOne+playerTwo) {
             case "ROCKROCK":
